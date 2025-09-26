@@ -1,0 +1,14 @@
+.view-container {
+  padding: 1rem;
+}
+
+.view-container h2 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .view-container {
+    padding: 0.5rem;
+  }
+}

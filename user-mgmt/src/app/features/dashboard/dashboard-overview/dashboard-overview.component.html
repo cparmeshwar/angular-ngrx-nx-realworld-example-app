@@ -1,0 +1,52 @@
+<div class="view-container">
+  <h2>Dashboard Overview</h2>
+  <div class="dashboard-cards">
+    <mat-card class="stat-card">
+      <mat-card-content>
+        <div class="stat-icon">
+          <mat-icon>people</mat-icon>
+        </div>
+        <div class="stat-info">
+          <h3>Total Users</h3>
+          <p class="stat-number">{{ (users$ | async)?.length || 0 }}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="stat-card">
+      <mat-card-content>
+        <div class="stat-icon">
+          <mat-icon>admin_panel_settings</mat-icon>
+        </div>
+        <div class="stat-info">
+          <h3>Admin Users</h3>
+          <p class="stat-number">{{ adminUsers }}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="stat-card">
+      <mat-card-content>
+        <div class="stat-icon">
+          <mat-icon>person</mat-icon>
+        </div>
+        <div class="stat-info">
+          <h3>Regular Users</h3>
+          <p class="stat-number">{{ regularUsers }}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="stat-card">
+      <mat-card-content>
+        <div class="stat-icon">
+          <mat-icon>analytics</mat-icon>
+        </div>
+        <div class="stat-info">
+          <h3>Active Sessions</h3>
+          <p class="stat-number">24</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

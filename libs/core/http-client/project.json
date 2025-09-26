@@ -1,7 +1,0 @@
-{
-  "name": "core-http-client",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "projectType": "library",
-  "sourceRoot": "libs/core/http-client/src",
-  "prefix": "cdt"
-}
