@@ -28,7 +28,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
   private router = inject(Router);
 
   ngOnInit() {
-    // Setup responsive sidebar
     this.breakpointSub = this.breakpointObserver
       .observe([Breakpoints.Handset, Breakpoints.TabletPortrait, Breakpoints.TabletLandscape, Breakpoints.Web])
       .subscribe(() => {
@@ -90,9 +89,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   logout() {
-    // Clear authentication state
     localStorage.removeItem('isAuthenticated');
-    // Navigate to login and replace current URL
     this.router.navigate(['/login'], { replaceUrl: true });
   }
 }

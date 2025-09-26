@@ -5,12 +5,14 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule],
   selector: 'app-root',
   template: `<router-outlet></router-outlet>`,
-  styles: [`
-    :host {
-      display: block;
-      min-height: 100vh;
-    }
-  `]
+  styles: [
+    `
+      :host {
+        display: block;
+        min-height: 100vh;
+      }
+    `,
+  ],
 })
 export class AppComponent {
   title = 'user-mgmt';
